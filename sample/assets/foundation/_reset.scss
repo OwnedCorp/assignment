@@ -1,0 +1,41 @@
+@charset 'UTF-8';
+
+@import "./reset/html5doctor";
+
+/*===============================
+    以下カスタマイズ
+================================*/
+
+body {
+  font-family: "Hiragino Sans", "Arial", "Oswald", "Helvetica Neue",
+    "Hiragino Kaku Gothic ProN", "Meiryo", "sans-serif";
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+img {
+  vertical-align: bottom;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  padding: 0;
+  color: inherit;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  letter-spacing: inherit;
+  appearance: none;
+}
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}

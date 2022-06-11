@@ -1,0 +1,58 @@
+{
+  // Automatically add vendor prefixes to unsupported CSS properties (e. g. transform -> -ms-transform). Specify what browsers to target with an array of strings (uses [Browserslist](https://github.com/ai/browserslist)). Pass `null` to turn off.
+  // Default is `null`
+  "liveSassCompile.settings.autoprefix": ["> 1%", "last 2 versions"],
+
+  // All Sass/Scss files inside the folders will be excluded.
+  //
+  // Examples:
+  // '**/node_modules/**',
+  // '.vscode/**',
+  // '.history/**'
+  //
+  // Glob Patterns are accepted.
+  "liveSassCompile.settings.excludeList": ["**/node_modules/**", ".vscode/**"],
+
+  // Set your exported CSS Styles, Formats & save location.
+  "liveSassCompile.settings.formats": [
+    {
+      "format": "expanded",
+      "extensionName": ".css",
+      "savePath": null
+    }
+  ],
+
+  // Set it as `false` if you don't want `.map` file for compiled CSS.
+  // Default is `true`
+  "liveSassCompile.settings.generateMap": true,
+
+  // This setting is useful when you deals with only few of sass files. Only mentioned Sass files will be included.
+  // NOTE: No need to include partial sass files.
+  "liveSassCompile.settings.includeItems": null,
+
+  // Set this to `false` if you do not want the output window to show.
+  // Note: You can use the command palette to open the Live Sass output window.
+  // Default is `true`
+  "liveSassCompile.settings.showOutputWindow": true,
+
+  // 自動フォーマット設定
+  // https://maku.blog/p/qcoz9ju/
+  "editor.formatOnSave": true, // 保存時にフォーマット
+  "editor.formatOnType": true, // 入力中（改行時）にフォーマット
+  "editor.formatOnPaste": true, // ペースト時にフォーマット
+
+  "[html]": {
+    // 1つのタブに相当する半角スペースの数
+    "editor.tabSize": 4
+  },
+
+  "[css]": {
+    // 1つのタブに相当する半角スペースの数
+    "editor.tabSize": 2
+  },
+
+  "[javascript]": {
+    // 1つのタブに相当する半角スペースの数
+    "editor.tabSize": 2
+  }
+}

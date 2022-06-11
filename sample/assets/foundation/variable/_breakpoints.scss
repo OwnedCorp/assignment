@@ -1,0 +1,14 @@
+@charset 'UTF-8';
+
+/*===============================
+ブレークポイント, デフォルトの横幅の指定
+================================*/
+
+$breakpoints: (
+  tablet: "screen and (max-width: 1010px)",
+  sp: "screen and (max-width: 768px)",
+  pc-max-default: 1010px,
+  pc-max-medium: 673px,
+  sp-max-default: 375px,
+  sp-max-large: 768px,
+);

@@ -1,0 +1,20 @@
+@charset 'UTF-8';
+
+/*===============================
+    Color設定
+
+    役割を持つ色と、そうでない色の混在を避けるため、以下のように分類する。
+    ・$color-base-色等-差分: () ……… 不確定要素に使用される、ベースとなる色
+    ・$color-役割-色等-差分: () ………… テキスト、背景色など役割を持つ色
+
+================================*/
+
+$color-border: #ebebeb;
+$color-link: #888888;
+$color-main: #f3f3f3;
+$color-accent: #2b87ae;
+$color-white: white;
+$color-black: #000;
+$color-text: #333333;
+$color-dotted: #cccccc;
+$color-ranking-icon: #eee;

@@ -1,0 +1,98 @@
+.header {
+  height: 100px;
+  margin: 0 auto;
+
+  &__logo {
+    float: left;
+
+    & > a {
+      display: block;
+      margin-top: $margin-px-35;
+    }
+
+    & > a > svg {
+      height: 30px;
+      width: 150px;
+    }
+  }
+
+  &-nav {
+    float: right;
+
+    &__item {
+      position: relative;
+      float: left;
+      width: 110px;
+      height: 100px;
+      border-left: 1px solid $color-border;
+
+      &:hover {
+        background: $color-main;
+        text-decoration: none;
+      }
+
+      & > a {
+        display: block;
+        height: 100%;
+        font-size: $font-size-12;
+        color: $color-link;
+        text-align: center;
+
+        & > .material-icons {
+          margin-top: $margin-px-35;
+        }
+
+        & > .label {
+          position: absolute;
+          display: block;
+          bottom: 10px;
+          width: 100%;
+        }
+      }
+
+      &--mall::after {
+        content: "";
+        position: absolute;
+        right: 0;
+        top: 0;
+        border-top: 5px solid $color-accent;
+        border-right: 5px solid $color-accent;
+        border-bottom: 5px solid transparent;
+        border-left: 5px solid transparent;
+      }
+    }
+  }
+
+  &__search-box {
+    display: flex;
+    margin-right: $margin-px-15;
+    margin-top: $margin-px-35;
+    float: right;
+
+    & > input {
+      line-height: 30px;
+      border: 0;
+      background-color: $color-main;
+      width: 250px;
+      padding-left: $margin-px-15;
+      border-top-left-radius: 15px;
+      border-bottom-left-radius: 15px;
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
+    }
+
+    & > label {
+      border-left: solid $color-white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 45px;
+      background-color: $color-main;
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
+      border-top-right-radius: 15px;
+      border-bottom-right-radius: 15px;
+      color: $color-link;
+    }
+  }
+}

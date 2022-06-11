@@ -1,0 +1,18 @@
+@charset 'UTF-8';
+
+/*===============================
+    ネストした値を取得
+    $getMapDeep_map      {String} : 配列
+    $getMapDeep_keys...  {String} : 取得したい値のkey名
+================================*/
+
+@function getMapDeep($getMapDeep_map, $getMapDeep_keys...) {
+  @each $key in $getMapDeep_keys {
+    @if not map-has-key($getMapDeep_map, $key) {
+      @return null;
+    }
+    $getMapDeep_map: map-get($getMapDeep_map, $key);
+  }
+
+  @return $getMapDeep_map;
+}

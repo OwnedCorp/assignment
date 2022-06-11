@@ -1,0 +1,15 @@
+@charset 'UTF-8';
+
+/*===============================
+
+    foundation/
+    * reset............`html5doctor.com Reset Stylesheet`をベースとしたリセットCSS
+    * variables........プロジェクト全体を通して使用される変数
+
+================================*/
+
+// foundation
+@import "../foundation/reset";
+@import "../foundation/variables";
+@import "../foundation/functions";
+@import "../foundation/mixins";

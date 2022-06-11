@@ -1,0 +1,12 @@
+@charset 'UTF-8';
+
+/*===============================
+ブレークポイント切替
+$responsive_breakpoint {String} : ブレークポイントが入る（pcまたはsp）
+================================*/
+
+@mixin responsive($responsive_breakpoint: sp) {
+  @media #{map-get($breakpoints, $responsive_breakpoint)} {
+    @content;
+  }
+}
