@@ -57,7 +57,7 @@ sample
 ├── common(共通 html generator)
 │   ├── header.php(headerのhtml)
 ├── header.php(html header)
-├── index.php(entrypoint)
+├── index.php(entrypoint(https://e-words.jp/w/%E3%82%A8%E3%83%B3%E3%83%88%E3%83%AA%E3%83%9D%E3%82%A4%E3%83%B3%E3%83%88.html))
 └── style.css(無視で大丈夫)
 ```
 
