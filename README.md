@@ -51,7 +51,7 @@ sample
 │   └── pages(ページ単位scss)
 │   ├── \_common.scss(共通scss)
 │   └── top
-│   ├── top.css
+│   ├── top.css(topのcss)
 │   ├── top.css.map
 │   └── top.scss(topのscss)
 ├── common(共通 html generator)
