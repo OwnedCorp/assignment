@@ -1,0 +1,359 @@
+@charset "UTF-8";
+/*===============================
+
+    foundation/
+    * reset............`html5doctor.com Reset Stylesheet`をベースとしたリセットCSS
+    * variables........プロジェクト全体を通して使用される変数
+
+================================*/
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+body {
+  line-height: 1;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+nav ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+  color: #000;
+  text-decoration: none;
+}
+
+/* change colours to suit your needs */
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+abbr[title],
+dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* change border colour to suit your needs */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+input,
+select {
+  vertical-align: middle;
+}
+
+/*===============================
+    以下カスタマイズ
+================================*/
+body {
+  font-family: "Hiragino Sans", "Arial", "Oswald", "Helvetica Neue", "Hiragino Kaku Gothic ProN", "Meiryo", "sans-serif";
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+img {
+  vertical-align: bottom;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  padding: 0;
+  color: inherit;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  letter-spacing: inherit;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+/*===============================
+    余白設定
+================================*/
+/*===============================
+    フォントの大きさ設定
+================================*/
+/*===============================
+    フォントの太さ設定
+================================*/
+/*===============================
+    Color設定
+
+    役割を持つ色と、そうでない色の混在を避けるため、以下のように分類する。
+    ・$color-base-色等-差分: () ……… 不確定要素に使用される、ベースとなる色
+    ・$color-役割-色等-差分: () ………… テキスト、背景色など役割を持つ色
+
+================================*/
+/*===============================
+ブレークポイント, デフォルトの横幅の指定
+================================*/
+/*===============================
+    ネストした値を取得
+    $getMapDeep_map      {String} : 配列
+    $getMapDeep_keys...  {String} : 取得したい値のkey名
+================================*/
+/*===============================
+ブレークポイント切替
+$responsive_breakpoint {String} : ブレークポイントが入る（pcまたはsp）
+================================*/
+.header {
+  height: 100px;
+  margin: 0 auto;
+}
+
+.header__logo {
+  float: left;
+}
+
+.header__logo > a {
+  display: block;
+  margin-top: 35px;
+}
+
+.header__logo > a > svg {
+  height: 30px;
+  width: 150px;
+}
+
+.header-nav {
+  float: right;
+}
+
+.header-nav__item {
+  position: relative;
+  float: left;
+  width: 110px;
+  height: 100px;
+  border-left: 1px solid #ebebeb;
+}
+
+.header-nav__item:hover {
+  background: #f3f3f3;
+  text-decoration: none;
+}
+
+.header-nav__item > a {
+  display: block;
+  height: 100%;
+  font-size: 0.75rem;
+  color: #888888;
+  text-align: center;
+}
+
+.header-nav__item > a > .material-icons {
+  margin-top: 35px;
+}
+
+.header-nav__item > a > .label {
+  position: absolute;
+  display: block;
+  bottom: 10px;
+  width: 100%;
+}
+
+.header-nav__item--mall::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 0;
+  border-top: 5px solid #2b87ae;
+  border-right: 5px solid #2b87ae;
+  border-bottom: 5px solid transparent;
+  border-left: 5px solid transparent;
+}
+
+.header__search-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 15px;
+  margin-top: 35px;
+  float: right;
+}
+
+.header__search-box > input {
+  line-height: 30px;
+  border: 0;
+  background-color: #f3f3f3;
+  width: 250px;
+  padding-left: 15px;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.header__search-box > label {
+  border-left: solid white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 45px;
+  background-color: #f3f3f3;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  color: #888888;
+}
+
+.wrapper {
+  margin: 0 auto;
+  width: 1020px;
+}
+/*# sourceMappingURL=top.css.map */
