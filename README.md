@@ -1,7 +1,7 @@
 # assignment
 
 ## 課題内容URL
-- https://www.notion.so/44a0c218a2c34766b3bd5b6d7c0e94dc
+- https://pumped-marigold-4f9.notion.site/44a0c218a2c34766b3bd5b6d7c0e94dc
 - https://kinarino.jp/
 
 ## 完成イメージ
