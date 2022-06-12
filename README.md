@@ -1,6 +1,7 @@
 # assignment
 
-## 課題内容URL
+## 課題内容 URL
+
 - https://pumped-marigold-4f9.notion.site/44a0c218a2c34766b3bd5b6d7c0e94dc
 - https://kinarino.jp/
 
@@ -34,9 +35,6 @@ sample
 │   │   └── \_margin.scss(余白調整の情報が変数で格納される。)
 │   ├── img(画像群)
 │   │   ├── common
-│   │   │   ├── download-app
-│   │   │   │   ├── app_frame.png(無視で大丈夫)
-│   │   │   │   └── magazine_thumbnail.jpeg(無視で大丈夫)
 │   │   │   └── side
 │   │   │   ├── art_and_culture.png(sideのアイコン画像)
 │   │   │   ├── beauty_and_care.png(sideのアイコン画像)
@@ -61,5 +59,6 @@ sample
 └── style.css(無視で大丈夫)
 ```
 
-### scssをcssへcompileする方法(vscode only)
+### scss を css へ compile する方法(vscode only)
+
 - https://blanche-toile.com/web/vscode-live-sass-compiler
