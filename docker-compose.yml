@@ -13,6 +13,7 @@ services:
 
   mysql:
     image: mysql:5.7 # MySQL5.7公式イメージを利用
+    platform: linux/x86_64 # M1チップ対応のため追記
     env_file: .env # 環境変数の定義に.envを利用
     ports:
       - "3306:3306" #ポート番号の設定
